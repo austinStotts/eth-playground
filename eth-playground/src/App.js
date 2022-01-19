@@ -1,13 +1,15 @@
 
-import './App.css';
+import { ChakraProvider } from "@chakra-ui/react";
+import Layout from "./components/Layout";
+import ConnectButton from "./components/ConnectButton";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <center className="connect-wallet-wrapper"><button className="connect-wallet">connect wallet</button></center>
-      <button className="mint">mint</button>
-    </div>
-  );
+    <ChakraProvider>
+      <Layout>
+        <p style={{ color: "white" }}>Hello, world!</p>
+        <ConnectButton />
+      </Layout>
+    </ChakraProvider>
+  )
 }
-
-export default App;

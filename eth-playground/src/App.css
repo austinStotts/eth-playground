@@ -3,7 +3,8 @@
   display: grid;
   grid-template-columns: 1fr [middle] 1fr 1fr;
   grid-template-rows: auto;
-  background-color: rgb(59, 59, 59);
+  background-color: rgb(124, 124, 124);
+  height: 100%;
 }
 
 .connect-wallet-wrapper {
@@ -16,6 +17,7 @@
   background-color: transparent;
   width: 70%;
   height: 40px;
+  
 }
 
 .connect-wallet:hover {
@@ -23,6 +25,21 @@
 }
 
 .mint {
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: transparent;
+  width: 70%;
+  height: 40px;
+}
+
+
+
+.mint:hover {
+  cursor: pointer;
+
+}
+
+.mint-wrapper {
   grid-column: middle;
 
 }
