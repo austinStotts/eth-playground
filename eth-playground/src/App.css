@@ -1,38 +1,29 @@
 .App {
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr [middle] 1fr 1fr;
+  grid-template-rows: auto;
+  background-color: rgb(59, 59, 59);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.connect-wallet-wrapper {
+  grid-column: middle;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.connect-wallet {
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: transparent;
+  width: 70%;
+  height: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.connect-wallet:hover {
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.mint {
+  grid-column: middle;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
