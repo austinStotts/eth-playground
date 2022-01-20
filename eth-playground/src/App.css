@@ -44,3 +44,38 @@
 
 }
 
+
+.grid-wrapper-main {
+  display: grid;
+  grid-template-columns:10px [l] 20% [a] 30% [b] 20% [c] 30% [r] 30px;
+  background-color: #1A202C;
+
+  height: 60px;
+}
+
+.col-a {
+  grid-column-start: l;
+  grid-column-end: a;
+
+  border: 2px solid red;
+}
+
+.col-b {
+  grid-column-start: a;
+  grid-column-end: b;
+
+  border: 2px solid green;
+}
+
+.col-c {
+  grid-column-start: b;
+  grid-column-end: c;
+
+  border: 2px solid blue;
+}
+
+.col-d {
+  grid-column-start: c;
+  grid-column-end: r;
+
+}
