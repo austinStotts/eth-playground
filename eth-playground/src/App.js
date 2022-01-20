@@ -5,7 +5,7 @@ import ConnectButton from "./components/ConnectButton";
 
 import "./App.css";
 
-import GridTest from "./components/GridTest";
+import NavBar from "./components/NavBar";
 
 export default function App() {
   return (
@@ -16,7 +16,7 @@ export default function App() {
     //   </Layout>
     // </ChakraProvider>
     <ChakraProvider>
-      <GridTest />
+      <NavBar />
     </ChakraProvider>
   )
 }

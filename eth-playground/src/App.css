@@ -45,7 +45,7 @@
 }
 
 
-.grid-wrapper-main {
+.navbar-wrapper-main {
   display: grid;
   grid-template-columns:10px [l] 20% [a] 30% [b] 20% [c] 30% [r] 30px;
   background-color: #1A202C;
